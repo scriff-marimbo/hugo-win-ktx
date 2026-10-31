@@ -1,8 +1,10 @@
 # Hugo for Windows, Kotlin port:
 
-*Hugo's Horrific Adventure*, the Windows 3.1/95 version of HUGO, a DOS adventure by David P. Gray (1995–97). The port is currently for Linux and Windows.
+*Hugo's Horrific Adventure*, specifically the Windows 3.1/95 version of HUGO, a DOS adventure by David P. Gray (1995–97). The port is currently for Linux and Windows.
 
-The 1.0.0 port is in `port/`. It is written in Kotlin with LWJGL and runs the original game files unchanged: `java -jar port/build/libs/hugo-port-1.0.0-all.jar extracted/HWIN_1` (or `./gradlew releaseZip` for a release zip with launchers). See `port/README.md`.
+To run it, extract the release zip, and then put the required "Hugo for Windows v1.5" game files in the same directory. Then run either hugo.sh (Linux) or hugo.bat (Windows).
+
+It is written in Kotlin with LWJGL and Swing and runs the original game files unchanged. See `port/README.md`.
 
 ## Layout
 
