@@ -38,12 +38,9 @@ python3 tools/exe_tables.py extracted/HWIN_1/HUGOWIN1.EXE analysis/exe_tables.js
 python3 tools/print_scripts.py analysis/exe_tables.json > analysis/scripts.txt
 ```
 
-`tools/hugo1w_names.json` holds the symbolic names ScummVM uses for these tables (from its `create_hugo` transcription). `exe_tables.py` attaches a name only after checking that the list's action types and timers match exactly.
-
 To get the same Ghidra view: import `extracted/HWIN_1/HUGOWIN1.EXE` (NE format is detected automatically), run auto-analysis, then run `ghidra/ApplySymbols.py` and choose the `docs/` folder.
 
 ## Key facts
 
 - **What's in the EXE:** game code is a single 45 KB segment (1010). The other ~70% of the EXE is MFC 2.5 and the MSVC runtime.
 - **What's in the DAT files:** all art, sound and text is in simple, now fully documented files. Game *logic* (objects, vocabulary, commands, action scripts) is compiled into the EXE as static tables.
-- **ScummVM reference:** ScummVM's `hugo` engine is derived from the original source and matches this build closely. Its source code is the best reference for each subsystem.
