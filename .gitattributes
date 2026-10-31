@@ -1,0 +1,17 @@
+* text=auto
+*.sh text eol=lf
+*.bat text eol=crlf
+*.jar binary
+*.png binary
+*.zip binary
+*.ttf binary
+*.sf2 binary
+*.EXE binary
+*.exe binary
+*.DLL binary
+*.dll binary
+*.DAT binary
+*.SAV binary
+*.BSF binary
+*.HLP binary
+*.VBX binary

@@ -1,0 +1,82 @@
+address,name,size,notes
+1018:0000,uifHeader,0xc0,UIF.DAT header {u16 size; u32 offset}[32]
+1020:0000,objects,0x1ce0,"Object objects[88], 0x54 bytes each (initial state in the EXE's seg 5; saved verbatim in HHHn.SAV)"
+1020:1ce0,uses,0x208,"use-with table {i16 obj; char *noTarget; {char **noun; char **verb} target[12]} x10, ends obj == 88"
+1028:0e10,pcxReadBuf,0x800,2 KB read buffer used by ReadPCX
+1028:1c10,objBoundary,8000,dynamic 1bpp boundary of objects (320x200)
+1028:3b50,boundary,8000,screen boundary overlay (SCENERY.DAT)
+1030:0000,guiBuffer,64000,UIF icon sheet 320x200 (8bpp)
+1038:0000,viewDib,64000,bottom-up DIB handed to StretchDIBits
+1040:0000,backBuffer,64000,dib_a: clean background
+1048:0000,backBufferSave,64000,copy used while the inventory bar is open
+1050:0000,frontBuffer,64000,dib_b: background + objects
+1058:0000,iconBar,10240,320x32 inventory bar
+1060:0000,routeMap,64000,byte map for path finding (Route::segment)
+1068:0000,ovlBase,8000,overlay base lines (SCENERY.DAT)
+1068:1f40,overlay,8000,foreground overlay (SCENERY.DAT)
+1070:002a,vbxFileList,,null-terminated near ptrs to VBX file names
+1070:00d4,fontTable,,"{HFONT, size, name}[2]"
+1070:00ec,hSoundMusic,2,GlobalAlloc handle for current MIDI
+1070:00ee,hSoundFx,2,GlobalAlloc handle for current PCM
+1070:03b4,nouns,,"near ptr[] -> word lists (char*[], ends with """")"
+1070:047a,verbTake,,word list for take/get
+1070:0486,verbDrop,,word list for drop
+1070:04c4,verbLook,,word list for look
+1070:057c,verbs,,near ptr[] -> word lists
+1070:0c24,actionBase,2,"address of action table, saved for pointer relocation"
+1070:0c24,actionBase,2,address saved in HHHn.SAV to relocate event action pointers
+1070:2ae2,heroPtr,4,far ptr to objects[0]
+1070:2ae6,screenPtr,4,far ptr to current screen index byte
+1070:2aea,heroImage,1,swapped hero image (0 = normal)
+1070:2aec,invOrder,0x40,"inventory display order (object indices, -1 end)"
+1070:2ca2,screenNames,,"char*[17] (House, Hall, Bed1 ...)"
+1070:2d08,screenActs,,per-screen action list ptrs (run on entry)
+1070:2d28,catchallList,,background cmd list valid on every screen
+1070:34b2,backgroundList,,per-screen background cmd list ptrs (10-byte entries)
+1070:34d2,hotspots,,"hotspot[]{screen,x1,y1,x2,y2,actIndex,viewx,viewy,direction} 18 bytes, ends screen<0 (27 entries)"
+1070:36ca,points,,{u8 score; u8 pad; u16 scored}[13]
+1070:36fe,numPoints,2,= 13
+1070:3700,defaultTunes,,"default playlist, -1 terminated"
+1070:370a,maze,18,"maze struct (enabled,size,x1,y1,x2,y2,x3,x4,firstScreen)"
+1070:371c,score,2,
+1070:371e,maxScore,2,CalcMaxScore
+1070:3720,lineBuf,,command being parsed
+1070:3774,stringCypher,,"""Copyright 1992, Gray Design Associates"""
+1070:3e2e,randSeed,4,CRT rand() seed
+1070:61b4,keyQueue,32,ring buffer of typed chars
+1070:61d4,typedLine,,command line being typed
+1070:6892,initSaveFl,2,-i switch: rewrite HHH00.SAV from the EXE tables
+1070:6894,storyModeFl,2,
+1070:6896,gameOverFl,2,
+1070:6898,playbackFl,2,-p switch
+1070:689a,recordFl,2,-r switch
+1070:689c,demoFl,2,-d switch: INIT_STORY_MODE(0) ends the game
+1070:68ae,jumpExitFl,2,
+1070:68b4,tick,4,scheduler tick counter
+1070:68bc,machineState,2,"0 intro-init,1 intro,2 intro-play,3 play,4 inventory,5 exit"
+1070:68be,inventoryState,2,
+1070:68c2,objectInHand,2,icon selected for use-with (-1 none)
+1070:68c4,routeIndex,2,current route node (-1 none)
+1070:68ca,gamePath,,directory prefix for save files
+1070:69ca,saveMagic,4,expected file-length field / magic
+1070:69ce,saveSlot,2,
+1070:69d8,eventHead,2,
+1070:6fde,viewBitmapInfo,,BITMAPINFO used by StretchDIBits
+1070:7206,eventTail,2,
+1070:7216,boot,0x2c,"decrypted HUGO.BSF header (checksum, registered @7217, pbswitch @7218, distrib @7220, exitLen @7240)"
+1070:7244,hPalette,2,
+1070:724e,config,0x32,"CONFIG.DAT image, see DAT_FORMATS.md section 11 (musicOn)"
+1070:7250,configSoundOn,2,
+1070:7252,configTurbo,2,1000/16 ms per tick instead of 1000/9
+1070:7254,configWinX,2,
+1070:7256,configWinY,2,
+1070:7258,viewWidth,2,window client width (default 640)
+1070:725a,viewHeight,2,window client height (default 368)
+1070:725c,configBgSound,2,sound check box: keep sound when window inactive
+1070:725e,configMusicVol,1,"percent, default 85"
+1070:725f,configSoundVol,1,"percent, default 100"
+1070:7260,playlist,0x20,u16 enabled[16]
+1070:7280,screenStates,17,
+1070:7304,stringBuf,,FetchString result buffer
+1070:76bc,eventFree,2,
+1070:76c8,events,600,event[50]{u16 action; u16 localFl; u32 time; u16 prev; u16 next}

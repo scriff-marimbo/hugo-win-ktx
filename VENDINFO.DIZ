@@ -1,0 +1,208 @@
++-------------------------------------------ÄÄÄÄÄÄÄÄ-----ÄÄÄÄÄÄÄÄ----+
+| This VENDINFO Product Information File contains both readable text |
+| and tools-accessible data about a product.  See the last text      |
+| section, below, for more information about VENDINFO and its tools. |
++--------------------------------------------------------------------+
+VENDINFO standard v1.04, produced by VendEdit v1.30, 13-Oct-1997
+
+===== Product Information ==============================
+   Product:             Hugo for Windows 
+   Version:             1.5
+   Version Date:        13-Oct-1997
+   Product Type:        Software
+   Basic Distribution Policy (see License, below, for details):
+      Shareware, subject to distribution restrictions
+
+   Product Description: Hugo for Windows, v1.5 <ASP>- Windows 
+                        adventure trilogy for whole family! First 
+                        game in a series of three cartoon-style 
+                        puzzle-solving graphics adventures set in a 
+                        haunted house, a whodunit mystery and a 
+                        menacing jungle. Includes a point & click 
+                        interface (+ optional command line), online 
+                        help with hints, MIDI music and digital sound
+                        effects. Req. Win3.1 or Win95.
+   Reason for version:  Updated contact information
+
+   Category:            Games; Adventure
+   Keywords:            HUGO CARTOON ADVENTURE GAME WINDOWS GRAY ASP
+   Required Packages:   hugow15
+   This Package:        HUGOW15
+   Registration Fee:    32.00 (US $)
+
+   Required Configuration
+      Processor Family: Intel 80x86 (minimum 80386)
+        Clock Speed: 20 MHz
+      Minimum OS:       Windows 3.1
+      Standard RAM:     640K
+      Extended Memory:  2000K
+      Hard Drive Space: 1750K
+      Required:
+         Expanded *or* Extended Memory
+         Color monitor
+      Won't Work With:
+         Floppy only
+         Monochrome Display Adapter (MDA)
+         Color Graphic Adapter (CGA)
+         Enhanced Graphic Adapter (EGA)
+         Monochrome monitor
+
+   Orders:
+      Address:          Gray Design Associates
+                        P.O. Box 333
+                        Northboro, MA 01532
+                        USA
+      Toll-Free Phone:  1-800-2424-PsL
+      Phone:            1-713-524-6394
+      FAX:              1-713-524-6398
+      CompuServe:       DGray
+      Internet:         david@dgray.com
+      Other E-mail:     http://www.dgray.com
+
+   Support:
+      Address:          Gray Design Associates
+                        P.O. Box 333
+                        Northboro, MA 01532
+                        USA
+      CompuServe:       DGray
+      Internet:         david@dgray.com
+      Other E-mail:     http://www.dgray.com
+
+
+===== Information for Users ("READ-ME") ================
+
+Welcome to Hugo for Windows!
+
+This is the first game in a series of three cartoon-style puzzle-solving
+graphics adventures for Windows 3.1, Windows 95 or later.  Starring
+Hugo and Penelope, the three games are set in a haunted house, a whodunit
+mystery and a menacing jungle.  Includes a simple point & click interface
+(plus an optional command line interface), online help with hints, MIDI
+music and digital sound effects (with sound card).
+
+
+===== Packing List =====================================
+
+As released by the author or publisher, this package contained the
+following files in addition to this VENDINFO.DIZ:
+
+        Filename      Size     Date       Time     CRC32
+      FILE_ID.DIZ      399   8-Oct-1997  05:21p   F7F4096C
+       README.DOC     4458  13-Oct-1997  10:30a   23A05DA6
+      HWINUNR.EXE   697636  13-Oct-1997  09:17p   9D279D6F
+      LICENSE.TXT     1084  13-Oct-1997  02:39p   F5598D22
+
+
+===== Installation =====================================
+
+Hugo for Windows Installation
+
+
+How do I install the game?
+
+Unzip our distribution file into a temporary directory.
+It should contain the following files:
+
+README.DOC   - This file!
+VENDINFO.DIZ - Description of product for vendors
+FILE_ID.DIZ  - Description of program for BBS's
+LICENSE.TXT  - Important licensing information.
+HWINUNR.EXE  - Program to install the game.
+
+Simply run HWINUNR.EXE from Windows (you can run it from DOS, too, if you
+are using Windows 95).  This will guide you through the simple
+installation process which installs the game on your hard drive.  We have
+thoughtfully provided an "uninstall" program which gets installed along
+with the game so if you don't like it you can remove every last trace of
+it.  This includes any desktop/start menu shortcuts in Win95 or
+icons/groups in Win3.1
+
+To run HWINUNR.EXE from Windows 3.1, click on "File"/"Run" in the Program
+Manager and click on the browse button.  Look for HWINUNR.EXE and double
+click on it.  Click OK and the installation will start.  In Windows 95
+simply type "HWINUNR" in the DOS box after you have unzipped our
+distribution file.
+
+When you have successfully installed the game you can delete the
+temporary directory where you unzipped the distribution file.
+
+
+===== Warranty =========================================
+
+DISCLAIMER OF WARRANTY
+======================
+
+This software is provided "AS IS" and the author makes no warranty of any
+kind, expressed or implied, including without limitation, any warranties
+of merchantability and/or fitness for a particular purpose.  The user
+must assume the entire risk of using the program.
+
+In no event will the author be liable for incidental, consequential,
+indirect or other damages including any lost profits or lost savings
+arising from the use of, or inability to use the software even if the
+author has been advised of the possibility of such damages, or for any
+claim by any other party.  And in no event shall the liability for any
+damages ever exceed the price paid for the software, regardless of the
+form and/or extent of the claim.
+
+
+
+===== License for Use and Distribution =================
+
+Hugo for Windows, v1.5 (Shareware version)
+Copyright 1995-1997, David P. Gray.  All Rights Reserved.
+
+David P. Gray, Gray Design Associates
+PO Box 333, Northboro, MA 01532, USA
+david@dgray.com http://www.dgray.com
+
+Customer License:
+
+This license entitles you, the user, the right to evaluate
+this shareware program.   You may also make copies of the
+original downloaded ZIP file to share with friends or upload
+to a bulletin board or the Internet.  All files within the
+original ZIP must remain present and unaltered.  This license
+does not give you the right to sell this product.  There are
+two more games in the TRILOGY not available as shareware,
+which you are encouraged to order (see ordering information).
+
+Distributor License:
+
+Permission is granted to distribute this specific version by
+Internet, BBS, diskette or CD-ROM so long as no attempt is
+made to sell it and all files remain present and unaltered.
+Diskette and CD-ROM distributors may charge a minimal fee to
+cover the cost of the medium.  A per-download fee may not be
+charged by online distributors.  David P. Gray reserves the
+right to revoke this permission by notification in writing.
+All other distribution rights are reserved by David P. Gray.
+Contact david@dgray.com for permission, if in any doubt.
+
+The attached VENDINFO data record is hereby incorporated by
+reference. Any distribution satisfying all the distribution
+requirements expressed in that data record is hereby authorized.
+
+
+===== About VENDINFO Files =============================
+
+Each VENDINFO.DIZ file contains extensive information about a product.
+This "human-readable" section is followed by a compressed data record
+useable by automated tools.  The data record allows BBSes and other
+distributors to automate package handling, and provides users with a
+wealth of product information.  VENDINFO tools (free viewer for users,
+free or inexpensive processors for distributors, editors for authors)
+are available from many sources, including the originators of VENDINFO:
+  Rams' Island Software    Voice: 303-841-2848  CompuServe: 76244,324
+  7644 E. Lakecliff Way      BBS: 303-841-6269     FidoNet: 1:104/333
+  Parker, CO 80134-5904 USA  FAX: 303-841-6269        RIME: 1235
+
+
+===== Compressed Data Record Follows ===================
+
+PK
+   ˆ«M#ÞI+  œ#  	   VENDDATA."'Ì<',	 ‡÷÷÷­uJ4©S£O$X,À€MG®Aùþ—ÑËç<âð†÷ÛlqÀá#Bi“#öù¾"­{ö-H³oå‚¼šÖ-Ù·wç\“ÃÊ¥ûö­[aÉÚ-ë–n]¹eAžÛ¶Ì)5¦Ë„«U¸dÃÒ-Kä˜ÙÓ;–.ï•{É§yÜI+Š&o¿ceˆ´êÑ§W•$‚ñøÚ*KP‡b!üÑ¤F¯ê‰iœ\‚'œõqlv²"ñ¢¡Ê y
+ÕgC“â'Ž­|í[6‰æø´ló†ÔP3|©ÓÂþÔ2'^©$Ú°uÝðxúºsËºÀ<Ô7–Ó¼‰UÊ6íØ5¤Öy9¶[¥oš¤Í±Koƒ:Ìånþ É¦=›&ÎŸ-È9»kô²fÍ–éóŸëR¯Lh{ó-øæèæéÊûoÏæ+õFÓÊK§¢,¾¥¸·ú2»k†öhr_&¨bÒçq©†[W¯žÃ5nøv\æörÃÂE£÷Ö™s‚í¨,Ö!>nÛw2’é`ú¼s†êyd*¡ÿÝ8uÏZMçÏ²™«Nêv,Ûºdšöpü*Žé+!H”+L>)›z«¡ÙÞ¶³½Û²)Y¬Žr‰*ÿeÙÂ©üÑ$îÖçÀ„åît/ñ©eãºðªžé2ùåLUÎYã()J3RGÄPÐRÁ3¼ÕE1”Î^ƒ€±¢ Såæûçæû 0ÿ ó °Í>±)Ê’Q<ôƒ·n p¯˜B
+eÕ A?¨f9ú€I-` å€	z€@Mp`À ¼t™.à‘Ñd	‚‡9Ø—³R÷š=Àº¤*•êÓ§NA%RÄsªU¥Á=hÂ_yâHˆàS/5hV0z#O4›;Ã¡@~ÄÍ}T(Ÿ$‘wT†ù¹:gÊ°)w8<Càâ-ÿIó…¾ÅræÌžT'r†É¸Cø70®	ãˆÿ™2<‰«Nò2$÷ Iž‚-ò¦Ÿö ¢´*F{ºeÔ’H"}ÅˆJF)(™çu1£5véÒ…«óåË»wïºï"€@dÒE˜óXi¾Ž Çl‰&Ì–2i¾%Ô¹L&Å›1g¶¬!é6gæ¤1IÅÁ‹(-¬ÅÙô(Wýò,™CMšï?€ÀîHóI$Í@ì˜€è ‘l„ŸàN›ý I€¹ô ƒl¬¹A±p „« °1w–òlÈ˜¥|’,Dvæ@ Ùg€2ß´dÓ<Ê"€÷‘EE‡€×‘‡Hût €÷!èÄ  ð<pàÈ# PK
+ 
+   ˆ«M#ÞI+  œ#  	                VENDDATA.PK      *   R    

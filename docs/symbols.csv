@@ -1,0 +1,343 @@
+address,name,area,scummvm_equivalent,notes
+1010:0006,CHugowinApp::CHugowinApp,game/app,,vtable 1010:0700; base CWinApp
+1010:0030,InitVBXs,game/app,,mode 0 = LoadLibrary spindll.dll + register VBX list at DGROUP:002a; mode 1 = unregister/free
+1010:00be,CHugowinApp::InitInstance,game/app,HugoEngine::run,"registers VBXs, ParseCommandLine, InitConfig(0), InitMachine, deletes Register menu item if registered"
+1010:01b4,CHugowinApp::ExitInstance,game/app,,calls InitVBXs(1)
+1010:01c8,ParseCommandLine,game/app,,"switches: -a<path> data dir, -d demo (ends game when story mode turns off), -i regenerate HHH00.SAV, -p play back / -r record playback.dat"
+1010:02a6,CHugowinApp::OnIdle,game/app,HugoEngine::run loop,the game is driven from OnIdle -> MainLoopTick
+1010:02fe,CAboutDlg::CAboutDlg,game/ui,,dialog 100 (VBX controls)
+1010:0330,CAboutDlg::DoDataExchange,game/ui,,binds VBX controls 1000/1021/1019/1020/1002
+1010:0388,ShowAboutDialog,game/ui,,
+1010:03f6,CAboutDlg::OnRegister,game/ui,,WinHelp(register.hlp)
+1010:0412,CAboutDlg::OnInitDialog,game/ui,,fills version/copyright/distributor VBX labels
+1010:05f0,CVBPropTemp::CVBPropTemp,game/ui,,small helper object used to set VBX properties
+1010:0624,CVBPropTemp::deleting_dtor,game/ui,,
+1010:0648,CVBPropTemp::~CVBPropTemp,game/ui,,deleting dtor
+1010:066c,CVBPropTemp::~CVBPropTemp_2,game/ui,,deleting dtor (other vtable)
+1010:0690,CHugowinApp::~CHugowinApp,game/app,,
+1010:06b2,CAboutDlg::deleting_dtor,game/ui,,
+1010:0804,CMainFrame::CreateObject,game/app,,MFC dynamic creation
+1010:0830,CMainFrame::CMainFrame,game/app,,vtable 1010:0bae; status bar at +0x4e
+1010:0860,CMainFrame::~CMainFrame,game/app,,
+1010:088e,CMainFrame::SetStatusText,game/ui,,status pane 1
+1010:08aa,CMainFrame::UpdateStatusBar,game/ui,,"shows ""Score: %d/%d"" or mouse x,y while debug key held"
+1010:0950,OnMciNotify,game/sound,,MM_MCINOTIFY -> PlayNextTune
+1010:0964,CMainFrame::OnActivateApp,game/sound,,-> PauseSound
+1010:0986,CMainFrame::PreCreateWindow,game/app,,
+1010:09a2,CMainFrame::OnClose,game/app,,"""You have not saved your game recently"" prompt; writes CONFIG.DAT"
+1010:09fc,CMainFrame::OnMove,game/app,,remembers window position for CONFIG.DAT
+1010:0a36,CmdRunDialogA,game/ui,,sets dialog-active flag then virtual call (+0x44)
+1010:0a56,CmdRunDialogD,game/ui,,
+1010:0a76,CmdRunDialogB,game/ui,,same pattern
+1010:0a96,CmdRunDialogE,game/ui,,
+1010:0abe,OnHelpRegister,game/ui,,WinHelp(register.hlp)
+1010:0ada,CMainFrame::OnQueryNewPalette,game/display,,
+1010:0b4e,CMainFrame::OnPaletteChanged,game/display,,
+1010:0b72,CMainFrame::OnQueryNewPalette_msg,game/display,,
+1010:0b8c,CMainFrame::deleting_dtor,game/app,,
+1010:0c4e,CHugowinDoc::CreateObject,game/app,,
+1010:0c7a,CHugowinDoc::CHugowinDoc,game/app,,vtable 1010:0cf6
+1010:0c98,CHugowinDoc::~CHugowinDoc,game/app,,
+1010:0cb4,CHugowinDoc::OnNewDocument,game/app,,
+1010:0cd4,CHugowinDoc::deleting_dtor,game/app,,
+1010:0d6a,CHugowinView::CreateObject,game/app,,
+1010:0d96,CHugowinView::CHugowinView,game/app,,vtable 1010:124a
+1010:0db4,CHugowinView::~CHugowinView,game/app,,calls ShutdownGame
+1010:0dd4,CHugowinView::OnDraw,game/display,,-> RedrawView
+1010:0e00,ViewVirtualThunk7,game/app,,
+1010:0e2e,OnFileRestore,game/ui,,CRestoreDlg -> DoRestore
+1010:0e7e,OnFileSave,game/ui,,CSaveDlg -> DoSave (not allowed after game over)
+1010:0ee0,CHugowinView::OnKeyDown,game/input,,-> KeyHandler
+1010:0efe,CHugowinView::OnLButtonDown,game/input,,sets left-click flag (DGROUP:68a8)
+1010:0f14,CHugowinView::OnMsgDefault1,game/input,,
+1010:0f24,CHugowinView::OnRButtonDown,game/input,,sets right-click flag (DGROUP:68aa)
+1010:0f3a,CHugowinView::OnMsgDefault2,game/input,,
+1010:0f4a,CHugowinView::OnSize,game/display,,stores client size in config.viewWidth/viewHeight
+1010:0f98,ViewVirtualThunk8,game/app,,
+1010:0fc0,ViewVirtualThunk1,game/app,,
+1010:0fe8,ViewVirtualThunk2,game/app,,
+1010:102a,CHugowinView::OnCreate,game/app,,-> InitGame
+1010:10ba,ViewVirtualThunk9,game/app,,
+1010:1118,ViewVirtualThunk3,game/app,,
+1010:1150,ViewVirtualThunk4,game/app,,
+1010:1170,ViewVirtualThunk5,game/app,,
+1010:1196,ViewVirtualThunk10,game/app,,
+1010:11ac,ViewVirtualThunk6,game/app,,
+1010:11c2,OnOptionsSound,game/ui,,CSoundDlg (dialog 135)
+1010:11e8,OnOptionsMusic,game/ui,,CMusicDlg (dialog 137)
+1010:1228,CHugowinView::deleting_dtor,game/app,,
+1010:12fe,DoRestore,game/file,,RestoreGame(slot); RestoreScreen; state=play
+1010:1322,DoSave,game/file,,"SaveGame(slot, description); remembers save tick"
+1010:1352,BuildSaveSlotList,game/file,,"scans HHH0..7.SAV, ""Unused slot %d"""
+1010:148e,CRestoreDlg::HaveSavedGames,game/ui,,error box when no save exists
+1010:14c2,CRestoreDlg::CRestoreDlg,game/ui,,dialog 104
+1010:14ea,CRestoreDlg::DoDataExchange,game/ui,,
+1010:150a,CRestoreDlg::OnInitDialog,game/ui,,
+1010:16a4,CSaveDlg::CSaveDlg,game/ui,,dialog 103
+1010:16e0,CSaveDlg::DoDataExchange,game/ui,,
+1010:1712,CSaveDlg::OnInitDialog,game/ui,,
+1010:192c,CSaveDlg::OnDescChange,game/ui,,
+1010:1a26,CSaveDlg::OnSelChange,game/ui,,
+1010:1bb6,CRestoreDlg::OnSelChange,game/ui,,
+1010:1bea,CRestoreDlg::OnOK,game/ui,,
+1010:1c28,CmdRunDialogF,game/ui,,
+1010:1c48,CmdRunDialogG,game/ui,,
+1010:1c68,CVBPropTemp3::deleting_dtor,game/ui,,
+1010:1c8c,CSaveDlgHelper::~dtor,game/ui,,
+1010:1cb0,CSaveDlg::~CSaveDlg,game/ui,,
+1010:1cd2,CSaveDlg::deleting_dtor,game/ui,,
+1010:1e9c,GetPaletteColor,game/display,,PALETTEINDEX-style COLORREF from remap table DGROUP:72d8
+1010:1eb0,InitDisplay,game/display,Screen::initDisplay,"fills BITMAPINFO (320x200, 8bpp, 16 colours) at DGROUP:6fde, clears palette remap"
+1010:1f0e,MoveImage,game/display,Screen::moveImage,copy rect between 320-wide DIB buffers
+1010:1f78,FlipToDIB,game/display,,copies rows bottom-up for StretchDIBits
+1010:1fea,RedrawView,game/display,Screen::displayBackground,StretchDIBits whole 320x184 view
+1010:2052,DisplayRect,game/display,Screen::displayRect,StretchDIBits one rect (scales to window)
+1010:213c,RemapPal,game/display,Screen::remapPal,action REMAPPAL
+1010:2154,SavePal,game/display,Screen::savePal,_write 512 bytes from DGROUP:7006
+1010:2168,RestorePal,game/display,Screen::restorePal,
+1010:217c,SetBackgroundColor,game/display,Screen::setBackgroundColor,empty in Windows build
+1010:217e,SelectFonts,game/display,,"CreateFont x2 (3), restore (4), select n"
+1010:2224,SizeWindow,game/display,,"scale 0 = use config size/pos (fallback 320x184 centred), n = n x 320x184"
+1010:232c,FindOvl,game/display,Screen::findOvl,scans base overlay below a pixel
+1010:237a,DisplayFrame,game/display,Screen::displayFrame,merges object frame into back buffer honoring overlay
+1010:247a,MergeRects,game/display,Screen::mergeRects,
+1010:24d8,MergeLists,game/display,Screen::mergeLists,
+1010:263a,DisplayList,game/display,Screen::displayList,"0=D_INIT 1=D_ADD 2=D_DISPLAY 3=D_RESTORE; ""Display list exceeded"""
+1010:2798,WriteChr,game/display,Screen::writeChr,
+1010:27e4,FontHeight,game/display,Screen::fontHeight,
+1010:27f2,StringLength,game/display,Screen::stringLength,
+1010:282c,CenterText,game/display,Screen::center,
+1010:2842,WriteStr,game/display,Screen::writeStr,
+1010:28ac,ShadowStr,game/display,Screen::shadowStr,
+1010:28ee,LoadFont,game/display,Screen_v1w::loadFont,UIF item 0..2 into seg 1028
+1010:29dc,ConvertPlanarLine,game/file,,4 bit-planes -> 8bpp (PCX)
+1010:2a90,ReadPCX,game/file,FileManager::readPCX,2 KB read buffer at 1028:0e10
+1010:2caa,ReadImage,game/file,FileManager::readImage,"""Objects database seek"""
+1010:2eb2,ReadBackground,game/file,FileManager_v2d::readBackground,"""Scenery database seek"""
+1010:2f2a,GetSound,game/file,FileManager::getSound,sounds.dat; 64-entry header
+1010:308e,ReadOverlay,game/file,FileManager_v1w::readOverlay,"0 boundary, 1 overlay, 2 base; ""Bad ovl_type"""
+1010:3292,SaveSeq,game/object,ObjectHandler::saveSeq,
+1010:331e,RestoreSeq,game/object,ObjectHandler::restoreSeq,
+1010:335a,SaveGame,game/file,FileManager::saveGame,"HHH%d.SAV, see DAT_FORMATS.md"
+1010:34b2,RestoreGame,game/file,FileManager::restoreGame,
+1010:368c,InitSaveState,game/file,,creates HHH00.SAV via SaveGame(-1) if missing or -i; saveMagic = its length
+1010:371e,OpenPlaybackFile,game/file,,playback.dat for -p / -r
+1010:3768,ClosePlaybackFile,game/file,,fclose(DGROUP:69dc)
+1010:3774,OpenDatabaseFiles,game/file,FileManager_v2d::openDatabaseFiles,"strings.dat, scenery.dat, objects.dat"
+1010:37de,CloseDatabaseFiles,game/file,FileManager::closeDatabaseFiles,
+1010:37fe,FetchString,game/file,FileManager_v2d::fetchString,"""String offset"", ""Fetched string too long!"""
+1010:38ce,ShowLicense,game/ui,,"decrypts exit text from HUGO.BSF, MessageBox ""License"""
+1010:3988,ReadBootFile,game/file,FileManager::readBootFile,"HUGO.BSF 44 bytes -> DGROUP:7216; ""Program startup file invalid"""
+1010:3a1e,ReadConfig,game/file,,CONFIG.DAT 50 bytes -> DGROUP:724e; short read keeps defaults
+1010:3a8e,WriteConfig,game/file,,CONFIG.DAT = 50 bytes from DGROUP:724e
+1010:3ada,GetUIFHeader,game/file,FileManager::getUIFHeader,loads 0xC0 header into seg 1018
+1010:3b42,ReadUIFItem,game/file,FileManager::readUIFItem,
+1010:3be4,GetDefaultTunes,game/sound,,marks default playlist from DGROUP:3700
+1010:3c24,InitStatus,game/engine,HugoEngine::initStatus,
+1010:3c8e,InitConfig,game/file,,"0 = defaults + ReadBootFile + ReadConfig; 2 = apply (window size, first enabled tune)"
+1010:3d66,InitTimer,game/engine,,timeBeginPeriod / timeEndPeriod
+1010:3db8,InitMachine,game/engine,HugoEngine::initMachine,"InitTimer, InitSound, InitEventQueue, InitDisplay, OpenDatabaseFiles, CalcMaxScore, srand(42)"
+1010:3de6,ShutdownGame,game/engine,HugoEngine::shutdown,
+1010:3e40,ReadObjectImages,game/file,ObjectHandler::readObjectImages,
+1010:3e5e,ReadUIFImages,game/file,FileManager::readUIFImages,
+1010:3e70,ReadScreenFiles,game/file,HugoEngine::readScreenFiles,background + 3 overlays
+1010:3ecc,MoveObjects,game/object,ObjectHandler_v1w::moveObjects,
+1010:4454,DeltaX,game/object,ObjectHandler::deltaX,
+1010:4556,DeltaY,game/object,ObjectHandler::deltaY,
+1010:461e,StoreBoundary,game/object,ObjectHandler::storeBoundary,
+1010:4686,ClearBoundary,game/object,ObjectHandler::clearBoundary,
+1010:46f0,ProcessMaze,game/engine,HugoEngine::processMaze,
+1010:4816,CompareObjectsY,game/object,y_comp,"qsort comparator used by UpdateImages (priority, then baseline y)"
+1010:4892,UpdateImages,game/object,ObjectHandler_v1w::updateImages,sort by y then draw/cycle
+1010:4b6a,FindObject,game/object,ObjectHandler::findObject,object under mouse
+1010:4c9c,FindObjectSpace,game/object,ObjectHandler::findObjectSpace,
+1010:4eaa,FindBackgroundVerb,game/parser,,first background verb for noun on screen
+1010:4f12,UseObject,game/object,ObjectHandler::useObject,"""%s %s"" / ""%s %s %s"""
+1010:5092,LookObject,game/object,ObjectHandler::lookObject,
+1010:50d4,FreeObjects,game/object,ObjectHandler::freeObjects,
+1010:5184,ScreenActions,game/engine,HugoEngine::screenActions,
+1010:51b6,SetCarriedScreen,game/object,ObjectHandler::setCarriedScreen,
+1010:51f0,BoundaryCollision,game/object,ObjectHandler::boundaryCollision,
+1010:5318,InitNewScreenDisplay,game/display,HugoEngine::initNewScreenDisplay,
+1010:5342,CalcMaxScore,game/engine,HugoEngine::calcMaxScore,sum of object values + bonus points -> DGROUP:371e
+1010:537c,GameOver,game/engine,HugoEngine::endGame,"""Hugo and Penelope say..."""
+1010:53aa,IntroInit,game/intro,intro_v1w::introInit,RestoreGame(-1) = initial state
+1010:53ba,IntroText,game/intro,intro_v1w::introText,empty
+1010:53bc,IntroPlay,game/intro,intro_v1w::introPlay,returns TRUE
+1010:53c0,InitEventQueue,game/schedule,Scheduler::initEventQueue,
+1010:5404,GetQueue,game/schedule,Scheduler::getQueue,"""Get_queue"""
+1010:542a,DelQueue,game/schedule,Scheduler::delQueue,
+1010:5492,InsertAction,game/schedule,Scheduler::insertAction,
+1010:5542,InsertActionList,game/schedule,Scheduler::insertActionList,
+1010:556c,DecodeString,game/schedule,Scheduler_v2d::decodeString,subtract cypher
+1010:55a6,DoAction,game/schedule,Scheduler::doAction,"switch on action type 0..0x30, see ACTION_TYPES in DAT_FORMATS.md"
+1010:5d9a,RunScheduler,game/schedule,Scheduler_v1w::runScheduler,
+1010:5dc0,GetTicks,game/schedule,Scheduler::getTicks,
+1010:5dc8,ProcessBonus,game/schedule,Scheduler::processBonus,
+1010:5df2,NewScreen,game/schedule,Scheduler::newScreen,
+1010:5e34,SaveEvents,game/schedule,Scheduler::saveEvents,
+1010:5f58,RestoreEvents,game/schedule,Scheduler::restoreEvents,"""Obsolete saved game format"""
+1010:60a2,RestoreScreen,game/schedule,Scheduler::restoreScreen,
+1010:60c0,SwapImages,game/object,ObjectHandler::swapImages,
+1010:619c,FirstBit,game/util,Utils::firstBit,
+1010:61c4,LastBit,game/util,Utils::lastBit,
+1010:61ea,ReverseByte,game/util,Utils::reverseByte,
+1010:6230,Warn,game/util,Utils::notifyBox,"MessageBox ""HugoWin Warning"""
+1010:6294,Error,game/util,error(),"fatal; MessageBox ""HugoWin Error"" then exit"
+1010:6372,GameOverMsg,game/util,,"""I'm afraid all you can do..."""
+1010:6386,DebugLog,game/util,,appends to debug.txt when enabled
+1010:63de,CBoxDlg::CBoxDlg,game/ui,,dialog 133 (text box / prompt)
+1010:6418,CBoxDlg::DoDataExchange,game/ui,,
+1010:6462,Box,game/ui,Utils::box,"type 0=box 1=?, 2=prompt, 3=yes/no; ""String too big"""
+1010:6514,CBoxDlg::SetText,game/ui,,
+1010:652a,CBoxDlg::GetResponse,game/ui,,
+1010:6540,CBoxDlg::OnInitDialog,game/ui,,"sizes the text box to its text, shows OK / Yes-No / edit field by box type"
+1010:6b7a,CBoxDlg::OnOK,game/ui,,stores typed response
+1010:6bd0,CVBPropTemp2::ctor,game/ui,,
+1010:6c0c,CVBPropTemp2::~dtor,game/ui,,
+1010:6c30,CBoxDlg::~CBoxDlg,game/ui,,
+1010:6cee,InitGame,game/engine,HugoEngine::initialize,"fonts, first screen, object images, UIF, about box"
+1010:6d5a,GetWinTicks,game/engine,Scheduler_v1w::getWinTicks,timeGetTime or GetTickCount
+1010:6d6e,MainLoopTick,game/engine,HugoEngine::runMachine,"frame-limited state machine: 0 intro init,1 text,2 play,3 play-game,4 inventory,5 exit"
+1010:6eda,DrawInventoryBar,game/inventory,InventoryHandler::constructInventory,
+1010:6fe2,ProcessInventory,game/inventory,InventoryHandler::processInventory,
+1010:70e4,RunInventory,game/inventory,InventoryHandler::runInventory,scroll icon bar in/out
+1010:7308,TranslateKey,game/input,,GetKeyboardState + ToAscii
+1010:7340,KeyHandler,game/input,Parser_v1w::keyHandler,
+1010:73c6,SetHeroDirectionImage,game/object,,picks walk sequence from VK_ arrow code
+1010:7422,MoveHeroByKey,game/input,,"arrow keys / numpad set hero vx,vy"
+1010:7518,CharHandler,game/input,Parser::charHandler,command-line editing + cursor blink
+1010:76a8,CommandF,game/parser,Parser::command,sprintf then LineHandler
+1010:76c4,LineHandler,game/parser,Parser_v1w::lineHandler,"main text parser; debug cmds ""goto"", ""fetch all"", ""fetch"""
+1010:7ad0,IsBackgroundWord,game/parser,Parser::isBackgroundWord_v1,
+1010:7b56,IsCatchallVerb,game/parser,Parser::isCatchallVerb_v1,
+1010:7bfe,IsNear,game/parser,Parser::isNear_v1,"""You're not close enough!"" etc."
+1010:7d28,IsWordPresent,game/parser,Parser::isWordPresent,
+1010:7d66,FindNoun,game/parser,Parser::findNoun,nouns table DGROUP:03b4
+1010:7dc8,FindVerb,game/parser,Parser::findVerb,verbs table DGROUP:057c
+1010:7e2a,ShowTakeables,game/parser,Parser::showTakeables,"""You can also see:"""
+1010:7e96,TakeObject,game/parser,Parser::takeObject,
+1010:7ee0,DropObject,game/parser,Parser::dropObject,
+1010:7f8e,IsGenericVerb,game/parser,Parser::isGenericVerb_v1,
+1010:80c6,IsCarried,game/parser,Parser::isCarried,
+1010:8100,IsObjectVerb,game/parser,Parser::isObjectVerb_v1,
+1010:8224,CursorText,game/mouse,MouseHandler::cursorText,
+1010:828e,FindExit,game/mouse,MouseHandler::findExit,hotspot table DGROUP:34d2
+1010:82dc,MouseHandler,game/mouse,MouseHandler::mouseHandler,
+1010:84e8,ProcessRightClick,game/mouse,MouseHandler::processRightClick,
+1010:85ca,ProcessLeftClick,game/mouse,MouseHandler::processLeftClick,
+1010:87b6,Segment,game/route,Route::segment,recursive flood fill on 1060:0000
+1010:8abe,NewNode,game/route,Route::newNode,
+1010:8aee,FindRoute,game/route,Route::findRoute,
+1010:8e36,ProcessRoute,game/route,Route::processRoute,
+1010:8ffe,StartRoute,game/route,Route::startRoute,
+1010:9066,MciError,game/sound,,
+1010:909e,WaveError,game/sound,,
+1010:90d4,SetMidiVolume,game/sound,,
+1010:9100,StopSound,game/sound,SoundHandler::stopSound,
+1010:911a,StopMusic,game/sound,SoundHandler::stopMusic,MCI_CLOSE
+1010:9130,ToggleMusic,game/sound,SoundHandler::toggleMusic,
+1010:914a,ToggleSound,game/sound,SoundHandler::toggleSound,
+1010:9158,PlayNextTune,game/sound,SoundHandler::checkMusic,
+1010:91a0,PlayMidiMCI,game/sound,SoundHandler::playMIDI,writes temp file then MCI sequencer
+1010:9318,FindMidiSynth,game/sound,,"""MOD_SQSYNTH"" etc."
+1010:93c6,PlayMusic,game/sound,SoundHandler::playMusic,
+1010:93f8,PlaySound,game/sound,SoundHandler::playSound,"waveOut, 11025 Hz 8-bit; priority"
+1010:94e0,InitSound,game/sound,SoundHandler::initSound,"0 init, 1 shutdown, 2 sync on/off state"
+1010:9702,PauseSound,game/sound,SoundHandler::pauseSound,
+1010:9764,CSoundDlg::CSoundDlg,game/ui,,dialog 135
+1010:9798,CSoundDlg::DoDataExchange,game/ui,,
+1010:97f0,CSoundDlg::OnMusicUp,game/ui,,
+1010:9946,CSoundDlg::OnMusicDown,game/ui,,
+1010:9a9c,CSoundDlg::OnSoundUp,game/ui,,
+1010:9bfa,CSoundDlg::OnSoundDown,game/ui,,
+1010:9d58,CSoundDlg::OnInitDialog,game/ui,,
+1010:9eb4,CSoundDlg::OnCheck,game/ui,,
+1010:9ece,CmdRunDialogC,game/ui,,
+1010:9eee,CVBPropTemp4::deleting_dtor,game/ui,,
+1010:9f12,CSoundDlg::~CSoundDlg,game/ui,,
+1010:9fc8,CMusicDlg::CMusicDlg,game/ui,,dialog 137
+1010:a03c,CMusicDlg::DoDataExchange,game/ui,,16 tune check boxes
+1010:a0ec,CMusicDlg::UpdateData,game/ui,,dialog 137 playlist
+1010:a194,CMusicDlg::OnInitDialog,game/ui,,
+1010:a26c,CMusicDlg::OnDefault,game/ui,,reset to default playlist
+1010:a290,CMusicDlg::OnOK,game/ui,,applies playlist (DGROUP:7260)
+1010:a310,CmdRunDialogH,game/ui,,
+1010:a330,CMusicDlg::OnApply,game/ui,,
+1010:a35e,CMusicDlg::OnOK_thunk,game/ui,,
+1010:a36e,CMusicDlgHelper::deleting_dtor,game/ui,,
+1010:a390,CMusicDlg::deleting_dtor,game/ui,,
+1000:0dd8,CString::CString,mfc,,
+1000:0dec,CString::CString(const CString&),mfc,,
+1000:0e5e,CString::~CString,mfc,,
+1000:0f3a,CString::operator=,mfc,,
+1000:138e,CWnd::Default,mfc,,
+1000:13cc,CWnd::FromHandle,mfc,,
+1000:1ffe,CWnd::GetParentFrame,mfc,,
+1000:2554,CWnd::UpdateData,mfc,,
+1000:2cce,CDialog::~CDialog,mfc,,
+1000:2cf6,CDialog::CDialog,mfc,,
+1000:2d8c,CDialog::DoModal,mfc,,
+1000:374c,CWinApp::CWinApp,mfc,,
+1000:3b88,CWinApp::OnIdle,mfc,,
+1000:59e4,CStatusBar::CStatusBar,mfc,,
+1000:5a74,CStatusBar::~CStatusBar,mfc,,
+1000:5ca0,CToolBar::CToolBar,mfc,,
+1000:5cfe,CToolBar::~CToolBar,mfc,,
+1000:6194,CWinApp::~CWinApp,mfc,,
+1000:6f42,CFrameWnd::CFrameWnd,mfc,,
+1000:6fb8,CFrameWnd::~CFrameWnd,mfc,,
+1000:7282,CFrameWnd::PreCreateWindow,mfc,,
+1000:75c4,CFrameWnd::OnClose,mfc,,
+1000:7abc,CWnd::FromHandlePermanent,mfc,,
+1000:9924,CStatusBar::SetPaneText,mfc,,
+1000:af1a,DDX_Check,mfc,,probable
+1000:b426,AfxMessageBox,mfc,,
+1000:b450,AfxMessageBox(UINT),mfc,,
+1000:c070,CDC::FromHandle,mfc,,
+1000:cd50,CDocument::CDocument,mfc,,
+1000:ded6,CView::CView,mfc,,
+1000:df42,CView::OnCreate,mfc,,
+1008:0a14,DDX_VBControl,mfc,,probable
+1008:0ac0,CVBControl::GetNumProperty,mfc,,probable
+1008:0af4,CVBControl::SetNumProperty,mfc,,probable
+1008:40fa,AfxRegisterVBX,mfc,,probable (loads a .VBX)
+1008:414c,AfxUnregisterVBX,mfc,,probable
+1008:5f2e,__astart,crt,,NE entry point (CS:IP 2:5f2e): InitTask/WaitEvent/InitApp -> WinMain
+1008:60f1,exit,crt,,
+1008:6453,_amsg_exit,crt,,FatalAppExit
+1008:65ba,fclose,crt,,
+1008:66de,fopen,crt,,
+1008:7afa,_close,crt,,
+1008:7b32,_lseek,crt,,
+1008:7c1e,_open,crt,,
+1008:7ee2,_read,crt,,
+1008:804c,_write,crt,,
+1008:81e6,_stackavail,crt,,used by Segment() to stop recursion
+1008:82f2,_ffree,crt,,
+1008:8313,_fmalloc,crt,,
+1008:8634,operator delete,crt,,
+1008:8690,strcat,crt,,
+1008:86d0,strcpy,crt,,
+1008:8702,strcmp,crt,,
+1008:872e,strlen,crt,,
+1008:874a,strncmp,crt,,
+1008:8886,_abort,crt,,"""ABNORMAL PROGRAM TERMINATION"""
+1008:8906,sprintf,crt,,
+1008:89a8,vfprintf,crt,,
+1008:89e4,vsprintf,crt,,
+1008:8a3e,_vsnprintf,crt,,
+1008:8a98,_filelength,crt,,
+1008:8efc,_strlwr,crt,,
+1008:8fcc,strspn,crt,,
+1008:90b6,strstr,crt,,
+1008:91e8,memcmp,crt,,compares save header v1.5 (5 bytes)
+1008:9210,_fmemcpy_2,crt,,
+1008:93f6,abs,crt,,
+1008:940a,qsort,crt,,
+1008:956c,srand,crt,,"called once with 42 in InitMachine, so rand() is deterministic per run"
+1008:9584,rand,crt,,"MSVC LCG: seed = seed*214013+2531011, return (seed>>16)&0x7fff; seed at DGROUP:3e2e"
+1008:973a,__aFldiv,crt,,32-bit signed divide helper
+1008:98d8,_fmemcpy,crt,,
+1008:99c8,_fmemset,crt,,
+1008:ad12,_ftol,crt,,

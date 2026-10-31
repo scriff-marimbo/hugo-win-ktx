@@ -1,0 +1,3926 @@
+{
+"source": "ScummVM devtools/create_hugo/staticdata.h + enums.h (Hugo 1 Windows tables); identifiers only",
+"action_lists": [
+{
+"name": "ALgoinside",
+"actions": [
+"aopendoor1b"
+],
+"sig": [
+[
+"INIT_OBJVXY",
+0
+]
+]
+},
+{
+"name": "ALopendoor1",
+"actions": [
+"acreak",
+"aopendoor1a",
+"achkdoor"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"START_OBJ",
+9
+],
+[
+"COND_BOX",
+18
+]
+]
+},
+{
+"name": "ALclosedoor1",
+"actions": [
+"acreak",
+"ainitdoor",
+"aclosedoor1"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"INIT_OBJ_FRAME",
+0
+],
+[
+"START_OBJ",
+9
+]
+]
+},
+{
+"name": "ALightning",
+"actions": [
+"abk1",
+"abknorm1",
+"abk2",
+"abknorm2",
+"areplight"
+],
+"sig": [
+[
+"BKGD_COLOR",
+0
+],
+[
+"BKGD_COLOR",
+0
+],
+[
+"BKGD_COLOR",
+2
+],
+[
+"BKGD_COLOR",
+3
+],
+[
+"ASCHEDULE",
+99
+]
+]
+},
+{
+"name": "ALblinkeyes1",
+"actions": [
+"ablink1a",
+"ablink1b",
+"ablink1c",
+"ablink1d",
+"ablink2a",
+"ablink2b",
+"ablink2c",
+"ablink2d",
+"arepeye"
+],
+"sig": [
+[
+"START_OBJ",
+0
+],
+[
+"START_OBJ",
+1
+],
+[
+"START_OBJ",
+2
+],
+[
+"START_OBJ",
+3
+],
+[
+"START_OBJ",
+27
+],
+[
+"START_OBJ",
+28
+],
+[
+"START_OBJ",
+29
+],
+[
+"START_OBJ",
+30
+],
+[
+"ASCHEDULE",
+72
+]
+]
+},
+{
+"name": "ALbat",
+"actions": [
+"abatxy",
+"abatvxy1",
+"abatvxy2",
+"abatvxy3",
+"abatvxy4",
+"abatvxy5",
+"abatsnd",
+"arepbat"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJVXY",
+20
+],
+[
+"INIT_OBJVXY",
+40
+],
+[
+"INIT_OBJVXY",
+50
+],
+[
+"INIT_OBJVXY",
+60
+],
+[
+"SOUND",
+50
+],
+[
+"ASCHEDULE",
+108
+]
+]
+},
+{
+"name": "ALpkin",
+"actions": [
+"abonus12",
+"apbreak",
+"ashowkey",
+"aridpkin",
+"adroppkin",
+"amovekey"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_CARRY",
+0
+],
+[
+"INIT_HF_COORD",
+0
+]
+]
+},
+{
+"name": "ALscr1",
+"actions": [
+"abonus1",
+"aheroxy01",
+"ascr01"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALridprof",
+"actions": [
+"aridprof"
+],
+"sig": [
+[
+"START_OBJ",
+null
+]
+]
+},
+{
+"name": "ALopendoor2",
+"actions": [
+"astophero",
+"adooropen",
+"aopendoor2",
+"ast12",
+"aheroxy12",
+"aclosedoor2",
+"ascr12"
+],
+"sig": [
+[
+"INIT_OBJVXY",
+0
+],
+[
+"SOUND",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJSTATE",
+12
+],
+[
+"INIT_OBJXY",
+12
+],
+[
+"INIT_OBJ_SEQ",
+12
+],
+[
+"NEW_SCREEN",
+12
+]
+]
+},
+{
+"name": "ALopendoor3",
+"actions": [
+"astophero",
+"adooropen",
+"aopendoor3",
+"ast14",
+"aheroxy14",
+"aclosedoor3",
+"ascr14"
+],
+"sig": [
+[
+"INIT_OBJVXY",
+0
+],
+[
+"SOUND",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJSTATE",
+12
+],
+[
+"INIT_OBJXY",
+12
+],
+[
+"INIT_OBJ_SEQ",
+12
+],
+[
+"NEW_SCREEN",
+12
+]
+]
+},
+{
+"name": "ALblinkeyes2",
+"actions": [
+"ablink3a",
+"ablink3b",
+"ablink3c",
+"ablink3d",
+"ablink4a",
+"ablink4b",
+"ablink4c",
+"ablink4d",
+"arepeye2"
+],
+"sig": [
+[
+"START_OBJ",
+0
+],
+[
+"START_OBJ",
+1
+],
+[
+"START_OBJ",
+2
+],
+[
+"START_OBJ",
+3
+],
+[
+"START_OBJ",
+27
+],
+[
+"START_OBJ",
+28
+],
+[
+"START_OBJ",
+29
+],
+[
+"START_OBJ",
+30
+],
+[
+"ASCHEDULE",
+72
+]
+]
+},
+{
+"name": "ALscr10",
+"actions": [
+"aheroxy10",
+"ast01",
+"ascr10"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr13",
+"actions": [
+"aheroxy13",
+"ascr13"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr15",
+"actions": [
+"aheroxy15",
+"ascr15"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALcuptxt0",
+"actions": [
+"acuptxt0",
+"acupknife",
+"acupwhist"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"START_OBJ",
+0
+]
+]
+},
+{
+"name": "ALcuptxt1",
+"actions": [
+"acuptxt1"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALcuptxt2",
+"actions": [
+"acuptxt2"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALcuptxt3",
+"actions": [
+"acuptxt3"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALlookcupb2",
+"actions": [
+"atcup2"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALlookcupb1",
+"actions": [
+"atcup1"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALlookcupb",
+"actions": [
+"abonus2",
+"atcup0"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALcupbpk",
+"actions": [
+"acupbpk"
+],
+"sig": [
+[
+"SET_STATE_BITS",
+0
+]
+]
+},
+{
+"name": "ALcupbdw",
+"actions": [
+"acupbdw",
+"adwwhy"
+],
+"sig": [
+[
+"SET_STATE_BITS",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALchasehall",
+"actions": [
+"ablowt",
+"ahchase1",
+"ahchase2",
+"ahchase3",
+"ahchase4"
+],
+"sig": [
+[
+"TEXT",
+27
+],
+[
+"INIT_HF_COORD",
+45
+],
+[
+"INIT_OBJXY",
+45
+],
+[
+"INIT_PATH",
+45
+],
+[
+"SOUND",
+45
+]
+]
+},
+{
+"name": "ALchasekit",
+"actions": [
+"ablowt",
+"akchase1",
+"akchase2",
+"akchase3",
+"ahchase4"
+],
+"sig": [
+[
+"TEXT",
+27
+],
+[
+"INIT_HF_COORD",
+45
+],
+[
+"INIT_OBJXY",
+45
+],
+[
+"INIT_PATH",
+45
+],
+[
+"SOUND",
+45
+]
+]
+},
+{
+"name": "ALdefbats",
+"actions": [
+"abonus6",
+"adef1",
+"adef2",
+"adef3",
+"adef4",
+"adef5",
+"adef6",
+"adef7",
+"adef8"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"DEL_EVENTS",
+9
+],
+[
+"INIT_PATH",
+9
+],
+[
+"INIT_PATH",
+9
+],
+[
+"INIT_PATH",
+9
+],
+[
+"INIT_PATH",
+9
+],
+[
+"TEXT",
+9
+],
+[
+"TEXT",
+27
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALnought",
+"actions": [
+"anought"
+],
+"sig": [
+[
+"TEXT",
+9
+]
+]
+},
+{
+"name": "ALcond9",
+"actions": [
+"acond9"
+],
+"sig": [
+[
+"COND_SCR",
+0
+]
+]
+},
+{
+"name": "ALcond5",
+"actions": [
+"acond5"
+],
+"sig": [
+[
+"COND_SCR",
+0
+]
+]
+},
+{
+"name": "ALblowdw",
+"actions": [
+"ablow1"
+],
+"sig": [
+[
+"COND_SCR",
+0
+]
+]
+},
+{
+"name": "ALputmask",
+"actions": [
+"a115a",
+"a115b",
+"a115c",
+"a115d",
+"a115e",
+"a115f",
+"a115g"
+],
+"sig": [
+[
+"COND_R",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_CARRY",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"SUB_SCORE",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALscr115",
+"actions": [
+"achkmask",
+"aheroxy115",
+"ascr115"
+],
+"sig": [
+[
+"COND_CARRY",
+0
+],
+[
+"INIT_OBJXY",
+1
+],
+[
+"NEW_SCREEN",
+1
+]
+]
+},
+{
+"name": "ALopenwdoorm",
+"actions": [
+"aopenwd1",
+"aopenwd2"
+],
+"sig": [
+[
+"START_OBJ",
+9
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALopenwdoors",
+"actions": [
+"aopenwdoorl",
+"aopenwdoorr",
+"achkmaskcarry"
+],
+"sig": [
+[
+"START_OBJ",
+9
+],
+[
+"START_OBJ",
+9
+],
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALclosewdoors",
+"actions": [
+"aclosewdoorl",
+"aclosewdoorr"
+],
+"sig": [
+[
+"START_OBJ",
+9
+],
+[
+"START_OBJ",
+9
+]
+]
+},
+{
+"name": "ALswapmask",
+"actions": [
+"aswapmask"
+],
+"sig": [
+[
+"SWAP_IMAGES",
+0
+]
+]
+},
+{
+"name": "ALdropmask",
+"actions": [
+"adropmask"
+],
+"sig": [
+[
+"INIT_CARRY",
+0
+]
+]
+},
+{
+"name": "ALwearmask",
+"actions": [
+"aweartext",
+"aswapmask",
+"aworn"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"SWAP_IMAGES",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALremovemask",
+"actions": [
+"aremovetext",
+"aswapmask",
+"aremoved"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"SWAP_IMAGES",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALusemask",
+"actions": [
+"aswapcheck"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALscr21",
+"actions": [
+"aheroxy21",
+"ascr21"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALbut",
+"actions": [
+"abut1",
+"abutvxy1",
+"abut2"
+],
+"sig": [
+[
+"START_OBJ",
+36
+],
+[
+"INIT_OBJVXY",
+36
+],
+[
+"INIT_PATH",
+72
+]
+]
+},
+{
+"name": "ALbutler",
+"actions": [
+"abut3a"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALbutp",
+"actions": [
+"abut4",
+"abut4a"
+],
+"sig": [
+[
+"YESNO",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALbutyes",
+"actions": [
+"abut5"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALbutno",
+"actions": [
+"abut6"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALbutchopped",
+"actions": [
+"abutsnd",
+"abut6a",
+"abut6b",
+"abut6c",
+"abut6d",
+"abut6e",
+"abut6f",
+"abut6g",
+"abut6h"
+],
+"sig": [
+[
+"SOUND",
+3
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+3
+],
+[
+"TEXT",
+6
+],
+[
+"START_OBJ",
+7
+],
+[
+"INIT_HH_COORD",
+7
+],
+[
+"START_OBJ",
+7
+],
+[
+"GAMEOVER",
+7
+],
+[
+"SOUND",
+7
+]
+]
+},
+{
+"name": "ALbutchop",
+"actions": [
+"abut7",
+"abut7a",
+"abut7b",
+"abut8",
+"abut9",
+"abut9a",
+"abut9b"
+],
+"sig": [
+[
+"INIT_CARRY",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+],
+[
+"BONUS",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"TEXT",
+3.0
+],
+[
+"TEXT",
+4.0
+]
+]
+},
+{
+"name": "ALbutroam",
+"actions": [
+"abut8",
+"abut9",
+"abut10",
+"abut11"
+],
+"sig": [
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_OBJSTATE",
+90
+],
+[
+"TEXT",
+3.0
+]
+]
+},
+{
+"name": "AL_eatchop",
+"actions": [
+"adropchop",
+"aeatchop",
+"aridchop"
+],
+"sig": [
+[
+"INIT_CARRY",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"START_OBJ",
+0
+]
+]
+},
+{
+"name": "ALeatchop",
+"actions": [
+"achopprompt"
+],
+"sig": [
+[
+"YESNO",
+0
+]
+]
+},
+{
+"name": "ALthrowchop",
+"actions": [
+"athrowchop"
+],
+"sig": [
+[
+"COND_SCR",
+0
+]
+]
+},
+{
+"name": "ALchopfail",
+"actions": [
+"adropchop",
+"aridchop",
+"achopfail"
+],
+"sig": [
+[
+"INIT_CARRY",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALchoppass",
+"actions": [
+"ashowchop",
+"achopthrown",
+"adropchop",
+"achopxy",
+"adogchop",
+"adogseq",
+"adogcyc",
+"adogseq2",
+"achopbonus"
+],
+"sig": [
+[
+"START_OBJ",
+0
+],
+[
+"TEXT",
+45
+],
+[
+"INIT_CARRY",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"AUTOPILOT",
+0
+],
+[
+"INIT_OBJ_SEQ",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJ_SEQ",
+36
+],
+[
+"BONUS",
+0
+]
+]
+},
+{
+"name": "ALrepredeye",
+"actions": [
+"ablink5a",
+"ablink5b",
+"ablink5c",
+"ablink5d",
+"arepredeye"
+],
+"sig": [
+[
+"START_OBJ",
+0
+],
+[
+"START_OBJ",
+1
+],
+[
+"START_OBJ",
+2
+],
+[
+"START_OBJ",
+3
+],
+[
+"ASCHEDULE",
+54
+]
+]
+},
+{
+"name": "ALreplips",
+"actions": [
+"amunch",
+"alips",
+"areplips"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"ASCHEDULE",
+36
+]
+]
+},
+{
+"name": "ALreparm",
+"actions": [
+"afork",
+"aarm",
+"areparm"
+],
+"sig": [
+[
+"SOUND",
+9
+],
+[
+"START_OBJ",
+0
+],
+[
+"ASCHEDULE",
+45
+]
+]
+},
+{
+"name": "ALtalkfrank",
+"actions": [
+"atalk1a",
+"atalk1b"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALtalkdrac",
+"actions": [
+"atalk2a",
+"atalk2b"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALtalkgwen",
+"actions": [
+"atalk3a",
+"atalk3b"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALtalkhood",
+"actions": [
+"atalk4a",
+"atalk4b"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALtalkslime",
+"actions": [
+"atalk5a",
+"atalk5b"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALtalkpeahd",
+"actions": [
+"atalk6a",
+"atalk6b"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALscr31",
+"actions": [
+"aheroxy31",
+"ascr31"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr35",
+"actions": [
+"aheroxy35",
+"ascr35"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr41",
+"actions": [
+"aheroxy41",
+"ascr41"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr51",
+"actions": [
+"aheroxy51",
+"ascr51"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr53",
+"actions": [
+"aheroxy53",
+"ascr53"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr56",
+"actions": [
+"aheroxy56",
+"ascr56"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr57",
+"actions": [
+"aheroxy57",
+"ascr57"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr65",
+"actions": [
+"aheroxy65",
+"ascr65"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALopenyes",
+"actions": [
+"abonus3",
+"aopen4",
+"adooropen",
+"aopendoor4",
+"astatedoor4"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"SOUND",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALopenno",
+"actions": [
+"anoopen"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALopendoor4",
+"actions": [
+"aopenp"
+],
+"sig": [
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALclosedoor4",
+"actions": [
+"aclosedoor4"
+],
+"sig": [
+[
+"START_OBJ",
+0
+]
+]
+},
+{
+"name": "ALshedoil",
+"actions": [
+"ashedoil1",
+"ashedoil2",
+"ashedoil3",
+"ashedoil4"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+],
+[
+"INIT_CARRY",
+0
+],
+[
+"ADD_SCORE",
+0
+]
+]
+},
+{
+"name": "ALscr75",
+"actions": [
+"aheroxy75",
+"ascr75"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALdog",
+"actions": [
+"asong3",
+"adog1",
+"adog2",
+"adog3",
+"adog4",
+"adog5"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_HF_COORD",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_OBJ_SEQ",
+0
+]
+]
+},
+{
+"name": "ALdead",
+"actions": [
+"afuneral",
+"adead1",
+"adead2",
+"adead3",
+"adead4",
+"adead5"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_HH_COORD",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"GAMEOVER",
+0
+]
+]
+},
+{
+"name": "ALdoggy",
+"actions": [
+"adead",
+"adoggy"
+],
+"sig": [
+[
+"ASCHEDULE",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALgetchop",
+"actions": [
+"atakechop"
+],
+"sig": [
+[
+"COND_SCR",
+0
+]
+]
+},
+{
+"name": "ALmovecarp",
+"actions": [
+"amovecarp1",
+"amovecarp2",
+"abonus9"
+],
+"sig": [
+[
+"START_OBJ",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"BONUS",
+0
+]
+]
+},
+{
+"name": "ALridmask",
+"actions": [
+"at78a",
+"at78b",
+"adropmask"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"COND_R",
+0
+],
+[
+"INIT_CARRY",
+0
+]
+]
+},
+{
+"name": "ALopenpass",
+"actions": [
+"abonus4",
+"aopentrap",
+"aheroxy78",
+"ast78",
+"at78c",
+"aopen78",
+"achkmask2"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"START_OBJ",
+9
+],
+[
+"INIT_OBJXY",
+21
+],
+[
+"INIT_OBJSTATE",
+21
+],
+[
+"INIT_OBJ_SEQ",
+21
+],
+[
+"NEW_SCREEN",
+21
+],
+[
+"COND_CARRY",
+0
+]
+]
+},
+{
+"name": "ALopenfail",
+"actions": [
+"aopenfail"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALopentrap",
+"actions": [
+"atrap"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALclosetrap",
+"actions": [
+"aclosetrap"
+],
+"sig": [
+[
+"START_OBJ",
+9
+]
+]
+},
+{
+"name": "ALscr89",
+"actions": [
+"abonus5",
+"aheroxy89",
+"ascr89"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr87",
+"actions": [
+"aheroxy87",
+"ascr87"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALhelpy",
+"actions": [
+"ahelps1"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALhelpn",
+"actions": [
+"anohelp"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALhelpy2",
+"actions": [
+"ahelps2"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALhelp",
+"actions": [
+"ahelp1",
+"ahelp2"
+],
+"sig": [
+[
+"YESNO",
+2160
+],
+[
+"YESNO",
+2700
+]
+]
+},
+{
+"name": "ALscr910",
+"actions": [
+"aheroxy910",
+"ascr910"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr98",
+"actions": [
+"aheroxy98",
+"ascr98"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALbatrep",
+"actions": [
+"abata1a",
+"abata1b",
+"abata2a",
+"abata2b",
+"abata3a",
+"abata3b",
+"abata4a",
+"abata4b",
+"arepbata"
+],
+"sig": [
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+7
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+6
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+5
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+4
+],
+[
+"ASCHEDULE",
+27
+]
+]
+},
+{
+"name": "ALbatattack",
+"actions": [
+"abata1a",
+"abata1b",
+"abata1c",
+"abata2a",
+"abata2b",
+"abata2c",
+"abata3a",
+"abata3b",
+"abata3c",
+"abata4a",
+"abata4b",
+"abata4c",
+"arepbata"
+],
+"sig": [
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+7
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+6
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+5
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+4
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"ASCHEDULE",
+27
+]
+]
+},
+{
+"name": "ALbatty",
+"actions": [
+"abatgot",
+"adead",
+"abat5a",
+"abat5b"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"ASCHEDULE",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALbats",
+"actions": [
+"abatcheck"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALmum",
+"actions": [
+"acreak",
+"asong2",
+"amdoor1",
+"amdoor2",
+"amum1",
+"amum2"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"SOUND",
+27
+],
+[
+"START_OBJ",
+9
+],
+[
+"START_OBJ",
+27
+],
+[
+"START_OBJ",
+18
+],
+[
+"INIT_PATH",
+27
+]
+]
+},
+{
+"name": "ALmummy",
+"actions": [
+"adead",
+"amumgot",
+"amum3",
+"amum4"
+],
+"sig": [
+[
+"ASCHEDULE",
+0
+],
+[
+"SOUND",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALrock",
+"actions": [
+"arock1",
+"arock2",
+"arock3",
+"arock4",
+"arock5",
+"arock6",
+"arock7",
+"arock8",
+"arock9",
+"arock10",
+"arock11",
+"arock12",
+"arock13",
+"arock14",
+"arock15",
+"arock16"
+],
+"sig": [
+[
+"INIT_PATH",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJ_SEQ",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJ_SEQ",
+11
+],
+[
+"INIT_OBJVXY",
+11
+],
+[
+"START_OBJ",
+20
+],
+[
+"INIT_OBJVXY",
+20
+],
+[
+"START_OBJ",
+40
+],
+[
+"INIT_OBJ_SEQ",
+40
+],
+[
+"INIT_OBJVXY",
+40
+],
+[
+"INIT_OBJ_SEQ",
+44
+],
+[
+"INIT_OBJVXY",
+44
+],
+[
+"START_OBJ",
+55
+],
+[
+"INIT_OBJVXY",
+55
+],
+[
+"INIT_PATH",
+55
+]
+]
+},
+{
+"name": "ALscr109",
+"actions": [
+"aheroxy109",
+"ascr109"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr1011",
+"actions": [
+"aswaphero",
+"aheroxy1011",
+"ascr1011"
+],
+"sig": [
+[
+"SWAP_IMAGES",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr1110",
+"actions": [
+"aswaphero",
+"aheroxy1110",
+"ascr1110"
+],
+"sig": [
+[
+"SWAP_IMAGES",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALscr1112",
+"actions": [
+"aswaphero",
+"aheroxy1112",
+"ascr1112"
+],
+"sig": [
+[
+"SWAP_IMAGES",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALcutrope",
+"actions": [
+"acutrope"
+],
+"sig": [
+[
+"INIT_OBJ_SEQ",
+0
+]
+]
+},
+{
+"name": "ALherofar",
+"actions": [
+"aherofar"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+]
+]
+},
+{
+"name": "ALembark",
+"actions": [
+"abin0",
+"ahin1",
+"ahin2",
+"abin1",
+"abin2",
+"abin3",
+"asplash"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJ_SEQ",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"SOUND",
+0
+]
+]
+},
+{
+"name": "ALnobung",
+"actions": [
+"abung1"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALgetinboat",
+"actions": [
+"abin"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALplugbung",
+"actions": [
+"aridbung",
+"adropbung"
+],
+"sig": [
+[
+"START_OBJ",
+0
+],
+[
+"INIT_CARRY",
+0
+]
+]
+},
+{
+"name": "ALdeboat",
+"actions": [
+"ahout",
+"ahout1",
+"about1",
+"about2",
+"about3",
+"asplash"
+],
+"sig": [
+[
+"INIT_OBJSTATE",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJ_SEQ",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"SOUND",
+0
+]
+]
+},
+{
+"name": "ALnodeboat",
+"actions": [
+"anodeboat"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALchkout",
+"actions": [
+"achkout"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALgetoutboat",
+"actions": [
+"agetout"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALgofar",
+"actions": [
+"aboatmov",
+"aboatvxy1",
+"aboatvxy2",
+"aboatvxy3",
+"aboatvxy4",
+"aboatvxy5",
+"aboatvxy6",
+"aboatvxy7",
+"aboatvxy8",
+"aboatvxy9",
+"aherochk",
+"aboatfar",
+"aviewfar"
+],
+"sig": [
+[
+"INIT_OBJSTATE",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJVXY",
+10
+],
+[
+"INIT_OBJVXY",
+20
+],
+[
+"INIT_OBJVXY",
+50
+],
+[
+"INIT_OBJVXY",
+60
+],
+[
+"INIT_OBJVXY",
+70
+],
+[
+"INIT_OBJVXY",
+100
+],
+[
+"INIT_OBJVXY",
+104
+],
+[
+"INIT_OBJVXY",
+107
+],
+[
+"COND_R",
+107
+],
+[
+"INIT_OBJSTATE",
+107
+],
+[
+"INIT_VIEW",
+107
+]
+]
+},
+{
+"name": "ALcomenear",
+"actions": [
+"aboatmov",
+"aboatvxy10",
+"aboatvxy11",
+"aboatvxy12",
+"aheronear",
+"aboatnear",
+"aviewnear"
+],
+"sig": [
+[
+"INIT_OBJSTATE",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJVXY",
+3
+],
+[
+"INIT_OBJVXY",
+10
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_OBJSTATE",
+13
+],
+[
+"INIT_VIEW",
+13
+]
+]
+},
+{
+"name": "ALmoveboat",
+"actions": [
+"apush"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALmoving",
+"actions": [
+"amoving"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALchkmove",
+"actions": [
+"achkmove"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALnotcut",
+"actions": [
+"anotcut"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALpushboat",
+"actions": [
+"achkrope"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALchkboat2",
+"actions": [
+"achkboat2"
+],
+"sig": [
+[
+"YESNO",
+0
+]
+]
+},
+{
+"name": "ALuseboat",
+"actions": [
+"achkboat1"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALrepno1",
+"actions": [
+"arepnop",
+"amans1",
+"aboatvxy9"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJVXY",
+107
+]
+]
+},
+{
+"name": "ALrepno3",
+"actions": [
+"arepno5",
+"aboatvxy9"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJVXY",
+107
+]
+]
+},
+{
+"name": "ALrepyes1",
+"actions": [
+"arepyep",
+"amanq2"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALrepyes2",
+"actions": [
+"arepyep",
+"amanq3"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALrepyes3",
+"actions": [
+"arepyep",
+"amanq4"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALrepyes4",
+"actions": [
+"amanq5"
+],
+"sig": [
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALrepyes5",
+"actions": [
+"amanq6"
+],
+"sig": [
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALrepyes6",
+"actions": [
+"amanq7"
+],
+"sig": [
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALrepyes7",
+"actions": [
+"abonus7",
+"arepyep2",
+"aompass"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALomask",
+"actions": [
+"amans3",
+"amans4",
+"amans5",
+"amans6",
+"amanq1"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"PROMPT",
+0
+]
+]
+},
+{
+"name": "ALomasked",
+"actions": [
+"amans7"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALoldman",
+"actions": [
+"achkpass"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALscr1213",
+"actions": [
+"aheroxy1213",
+"ascr1213"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALjailrep",
+"actions": [
+"ajail3",
+"ajail4",
+"ajailrep"
+],
+"sig": [
+[
+"INIT_OBJ_SEQ",
+0
+],
+[
+"INIT_OBJ_SEQ",
+2
+],
+[
+"ASCHEDULE",
+4
+]
+]
+},
+{
+"name": "ALend",
+"actions": [
+"ajails1",
+"ajails2",
+"ajails3",
+"ajails4"
+],
+"sig": [
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALjail",
+"actions": [
+"afinale",
+"ajail1",
+"ajail2",
+"ajailrep",
+"aend",
+"atheend1",
+"atheend2"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"INIT_PATH",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"ASCHEDULE",
+4
+],
+[
+"ASCHEDULE",
+36
+],
+[
+"START_OBJ",
+45
+],
+[
+"NEW_SCREEN",
+45
+]
+]
+},
+{
+"name": "ALgive",
+"actions": [
+"abonus8",
+"agive1",
+"agive2",
+"aguardgo1",
+"aguardgo2",
+"aguardgo3",
+"aguardgo4",
+"aturnguard"
+],
+"sig": [
+[
+"BONUS",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJ_SEQ",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJ_SEQ",
+18
+]
+]
+},
+{
+"name": "ALnogive",
+"actions": [
+"anogive"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALgold",
+"actions": [
+"achkscr"
+],
+"sig": [
+[
+"COND_SCR",
+0
+]
+]
+},
+{
+"name": "ALscr1211",
+"actions": [
+"aswaphero",
+"aheroxy1211",
+"ascr1211"
+],
+"sig": [
+[
+"SWAP_IMAGES",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALgoodbye",
+"actions": [
+"bye1",
+"bye2",
+"bye3"
+],
+"sig": [
+[
+"TEXT",
+18
+],
+[
+"TEXT",
+27
+],
+[
+"EXIT",
+36
+]
+]
+},
+{
+"name": "ALok151",
+"actions": [
+"aheroxy151",
+"ascr151"
+],
+"sig": [
+[
+"INIT_OBJXY",
+0
+],
+[
+"NEW_SCREEN",
+0
+]
+]
+},
+{
+"name": "ALdmsg3",
+"actions": [
+"admsg3"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALdmsg2",
+"actions": [
+"admsg2"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALdmsg1",
+"actions": [
+"admsg1"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALchkd3",
+"actions": [
+"achkd3"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALchkd2",
+"actions": [
+"achkd2"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALchkd1",
+"actions": [
+"achkd1"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALscr151",
+"actions": [
+"achkd0"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALprof",
+"actions": [
+"alab1",
+"alab2",
+"alab3",
+"alab4",
+"alab5",
+"alab6",
+"alab7",
+"alab8",
+"alab9",
+"alab10",
+"alab11",
+"alab12",
+"alab13",
+"alab14"
+],
+"sig": [
+[
+"INIT_HF_COORD",
+0
+],
+[
+"INIT_OBJXY",
+0
+],
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJ_SEQ",
+0
+],
+[
+"START_OBJ",
+0
+],
+[
+"INIT_OBJVXY",
+12
+],
+[
+"INIT_OBJVXY",
+16
+],
+[
+"START_OBJ",
+12
+],
+[
+"START_OBJ",
+16
+],
+[
+"INIT_OBJ_SEQ",
+14
+],
+[
+"INIT_OBJ_SEQ",
+18
+],
+[
+"TEXT",
+24
+],
+[
+"TEXT",
+24
+],
+[
+"INIT_PATH",
+40
+]
+]
+},
+{
+"name": "ALlab",
+"actions": [
+"achklab"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALbox0",
+"actions": [
+"acycle",
+"abox2",
+"abox3",
+"abox4",
+"abox4a",
+"abox5",
+"abox6",
+"abox8a",
+"abox9",
+"abox10",
+"abox11",
+"abox12"
+],
+"sig": [
+[
+"ASCHEDULE",
+0
+],
+[
+"TEXT",
+16
+],
+[
+"TEXT",
+16
+],
+[
+"SWAP_IMAGES",
+20
+],
+[
+"INIT_OBJXY",
+20
+],
+[
+"TEXT",
+38
+],
+[
+"TEXT",
+44
+],
+[
+"INIT_OBJVXY",
+56
+],
+[
+"INIT_OBJVXY",
+38
+],
+[
+"START_OBJ",
+38
+],
+[
+"START_OBJ",
+73
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALbbox",
+"actions": [
+"abbox"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALbox",
+"actions": [
+"achkbbox",
+"arepbox"
+],
+"sig": [
+[
+"COND_BOX",
+0
+],
+[
+"ASCHEDULE",
+9
+]
+]
+},
+{
+"name": "ALweird",
+"actions": [
+"abgsnd",
+"abg1",
+"abg2",
+"abg3",
+"abg4",
+"abg5",
+"abg6",
+"abg7",
+"abg8"
+],
+"sig": [
+[
+"SOUND",
+0
+],
+[
+"BKGD_COLOR",
+0
+],
+[
+"BKGD_COLOR",
+2
+],
+[
+"BKGD_COLOR",
+4
+],
+[
+"BKGD_COLOR",
+6
+],
+[
+"BKGD_COLOR",
+8
+],
+[
+"BKGD_COLOR",
+10
+],
+[
+"BKGD_COLOR",
+12
+],
+[
+"BKGD_COLOR",
+14
+]
+]
+},
+{
+"name": "ALcycle",
+"actions": [
+"abox0",
+"abox1",
+"acyc1",
+"acyc2",
+"aweird",
+"abox7",
+"abox8"
+],
+"sig": [
+[
+"INIT_OBJVXY",
+0
+],
+[
+"INIT_OBJVXY",
+9
+],
+[
+"INIT_PATH",
+0
+],
+[
+"INIT_PATH",
+57
+],
+[
+"ASCHEDULE",
+16
+],
+[
+"INIT_OBJVXY",
+50
+],
+[
+"INIT_OBJVXY",
+57
+]
+]
+},
+{
+"name": "ALinorm",
+"actions": [
+"ainorm"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALigor3",
+"actions": [
+"acycle",
+"aigor30",
+"aigor31",
+"aigor32",
+"aigor33"
+],
+"sig": [
+[
+"ASCHEDULE",
+0
+],
+[
+"SWAP_IMAGES",
+30
+],
+[
+"SWAP_IMAGES",
+30
+],
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALigor2",
+"actions": [
+"acycle",
+"aigor20",
+"aigor21",
+"aigor22",
+"aigor23"
+],
+"sig": [
+[
+"ASCHEDULE",
+0
+],
+[
+"SWAP_IMAGES",
+30
+],
+[
+"SWAP_IMAGES",
+30
+],
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALigor1",
+"actions": [
+"acycle",
+"aigor10",
+"aigor11",
+"aigor12",
+"aigor13",
+"aigor14"
+],
+"sig": [
+[
+"ASCHEDULE",
+0
+],
+[
+"SWAP_IMAGES",
+30
+],
+[
+"SWAP_IMAGES",
+30
+],
+[
+"INIT_OBJXY",
+30
+],
+[
+"TEXT",
+0
+],
+[
+"INIT_OBJSTATE",
+0
+]
+]
+},
+{
+"name": "ALigor0",
+"actions": [
+"aigor0"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALgobox",
+"actions": [
+"agobox"
+],
+"sig": [
+[
+"TEXT",
+0
+]
+]
+},
+{
+"name": "ALichk3",
+"actions": [
+"aichk3"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALichk2",
+"actions": [
+"aichk2"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALichk1",
+"actions": [
+"aichk1"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALichk0",
+"actions": [
+"aichk0"
+],
+"sig": [
+[
+"COND_R",
+0
+]
+]
+},
+{
+"name": "ALigor",
+"actions": [
+"aichkbox"
+],
+"sig": [
+[
+"COND_BOX",
+0
+]
+]
+}
+],
+"objects": [
+"HERO",
+"DOOR1",
+"EYES1",
+"EYES2",
+"BAT",
+"PKIN",
+"KEY",
+"FENCE",
+"TREE1",
+"DOOR2",
+"DOOR3",
+"EYES3",
+"EYES4",
+"BATPIC",
+"CANDLE",
+"CUPBOARD",
+"KNIFE",
+"WHISTLE",
+"WARD",
+"WDOORL",
+"WDOORR",
+"MASK",
+"MONKEY",
+"WINDOW1",
+"BED",
+"BUTLER",
+"CHOP",
+"REDEYES",
+"LIPS",
+"ARM",
+"HDLSHERO",
+"ZELDPIC",
+"WINDOW2",
+"HUTCH",
+"FRANK",
+"DRAC",
+"LADY",
+"HOOD",
+"SLIME",
+"PEAHEAD",
+"FOOD",
+"PLANT",
+"WINDOW3",
+"TOILET",
+"BATH",
+"MIRROR",
+"WINDOW4",
+"BROOM",
+"UNITS",
+"DOOR4",
+"SHED",
+"OILCAN",
+"TREE2",
+"INSHED",
+"DOG",
+"CARPET",
+"TRAP",
+"BOLT",
+"HERODEAD",
+"MOUSEHOLE",
+"ROCK1",
+"ROCK2",
+"ROCK3",
+"DOOR5",
+"BAT2",
+"BAT3",
+"BAT4",
+"BAT5",
+"MUMMY",
+"MDOOR",
+"GOLD",
+"ROCK4",
+"BOAT",
+"ROPE",
+"OLDMAN",
+"WHERO",
+"GUARD",
+"PROF",
+"IGOR",
+"BUNG",
+"GDOOR",
+"SPACHERO",
+"FUZYHERO",
+"ARC",
+"BOX",
+"BUTTONS",
+"MACHINE",
+"TABLE"
+]
+}

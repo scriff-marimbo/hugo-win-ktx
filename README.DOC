@@ -1,0 +1,87 @@
+	Hugo for Windows Technical Notes
+
+
+This file contains notes in the form of frequently asked questions on running
+Hugo for Windows.
+
+1.  What is Hugo for Windows?
+
+Hugo for Windows is a Trilogy of cute cartoon-style "point & click" adventure
+games following the adventures of Hugo and Penelope.  They are suitable for
+the whole family.  Only game one is distributed as shareware, the other two
+are available directly from the author, David P. Gray for $32 plus $4 S&H.
+For this you receive the entire Trilogy of three games plus a 30-page answer
+booklet.  There are many ways to order, by mail, online or by phone.  Please
+see the ordering information in the main menu in the game or open the
+REGISTER.HLP file in Windows Help now to print an order form.  This also has
+screen shots and full details of all the games in the Trilogy.
+
+
+2.  How do I install the game?
+
+Unzip our distribution file into a temporary directory.
+It should contain the following files:
+
+README.DOC	- This file!
+FILE_ID.DIZ	- Description of program for BBS's
+LICENSE.TXT	- Important licensing information.
+HWINUNR.EXE	- Program to install the game.
+
+Simply run HWINUNR.EXE from Windows (you can run it from DOS, too, if you
+are using Windows 95).  This will guide you through the simple installation
+process which installs the game on your hard drive.  We have thoughtfully
+provided an "uninstall" program which gets installed along with the game so
+if you don't like it you can remove every last trace of it.  This includes
+any desktop/start menu shortcuts in Win95 or icons/groups in Win3.1
+
+To run HWINUNR.EXE from Windows 3.1, click on "File"/"Run" in the Program
+Manager and click on the browse button.  Look for HWINUNR.EXE and double
+click on it.  Click OK and the installation will start.  In Windows 95 simply
+type "HWINUNR" in the DOS box after you have unzipped our distribution file.
+
+When you have successfully installed the game you can delete the temporary
+directory where you unzipped the distribution file.
+
+
+3.  What computer does Hugo for Windows require?
+
+Hugo for Windows requires a 386 cpu or higher, at least 4Mb of memory,
+Windows 3.1 or Windows 95 or higher, and a VGA display or better.
+A sound card is recommended.  Mouse input is recommended.  The game does not
+depend on any particular color depth or screen resolution to be set.
+
+
+4.  Why can't I save my games?
+
+Your disk is full, or perhaps write protected.  You can save up to eight
+different games, each of which can take up to 12KB so you need around 100KB
+space available on your hard drive before you start the game.  If you run
+out of space when you try to save a game, delete some unwanted files and
+try saving again.
+
+
+5.  Is my sound card supported?
+
+If Windows supports it, then yes.  Hugo for Windows uses the standard
+multimedia programming extensions which are not specific to any type or make
+of sound card.  If your card is supported under Windows and installed
+correctly then in theory you should have no problems with it.  Any problems
+you do have will probably be a result of incorrect installation of Windows
+or your sound card or problems with the sound card manufacturer's drivers.
+
+Background music is generated from General Midi files within the game, using
+the MCI interface and the Windows Midi Mapper.  Unfortunately, due to the way
+the Windows Midi Mapper was designed, confusion has arisen over two aspects of
+its use, namely which channel drum sounds should be programmed to appear on
+and which channels should be used.  The game uses the setup most commonly
+used, namely channels 1 thru 10 with drums on channel 10.  If the music
+does not sound right and you don't hear drum sounds, check your setup.  In
+Windows 3.1 open the Control Panel application and click on the Midi Mapper
+applet.  The setup should be set to something like "Ext FM" or "All FM".
+(Extended or General Midi internal synthesizer).  If you press the Edit button
+you should see at least the first 10 channels with the port name set to a
+valid port name.  Some cards use the "Voyetra Super SAPI FM Driver" which may
+need the 10th Destination channel set to 16 to hear drum sounds correctly.  If
+the setup looks wrong, go back to the main Midi Mapper screen and try
+selecting a different setup name from the list.  In Windows 95 this is less of
+a problem since it defaults to General Midi with drums on channel 10. 

@@ -1,0 +1,7 @@
+build/
+build-local/
+.idea/
+.gradle/
+*.SAV
+CONFIG.DAT
+hugo-port.properties
