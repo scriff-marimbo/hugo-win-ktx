@@ -1,6 +1,6 @@
-# Hugo for Windows v1.5: reverse-engineering notes
+# Hugo for Windows, Kotlin port:
 
-This is the analysis of *Hugo's Horrific Adventure*, the shareware Windows 3.1/95 game by David P. Gray (1995–97). The goal is a port to modern Linux and Windows.
+*Hugo's Horrific Adventure*, the Windows 3.1/95 version of HUGO, a DOS adventure by David P. Gray (1995–97). The port is currently for Linux and Windows.
 
 The 1.0.0 port is in `port/`. It is written in Kotlin with LWJGL and runs the original game files unchanged: `java -jar port/build/libs/hugo-port-1.0.0-all.jar extracted/HWIN_1` (or `./gradlew releaseZip` for a release zip with launchers). See `port/README.md`.
 
