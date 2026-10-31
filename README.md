@@ -2,7 +2,7 @@
 
 *Hugo's Horrific Adventure*, specifically the Windows 3.1/95 version of HUGO, a DOS adventure by David P. Gray (1995–97). The port is currently for Linux and Windows.
 
-![game screenshot](https://imgur.com/2QV0z6I)
+![game screenshot](https://i.imgur.com/2QV0z6I.png)
 
 To run it, extract the release zip, and then put the required "Hugo for Windows v1.5" game files in the same directory. Then run either hugo.sh (Linux) or hugo.bat (Windows).
 
